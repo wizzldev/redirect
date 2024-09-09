@@ -1,5 +1,7 @@
 # Path to URL redirect 🔗
 
+A simple http server for redirecting given paths to the corresponding url.
+
 ## Usage
 
 ### Configuration
@@ -23,6 +25,15 @@ a single binary from the code (you'll have to add the `.data` folder to the corr
 
 Our service allows you to specify the server's listen address by using the `--listenAddr :3001` flag.
 
+### Error handling
+
+Our service also allows you to specify a custom error page when a redirect does not exists or the
+service gets a bad request. Just edit the `error.html` file's content, and you're ready to **Go**. (pun intended 😆)
+
 ## Testing
 
 Every feature is well tested. You can simply run `go test ./...` to check if everything is fine.
+
+## Credits
+
+[Martin Binder](https://mrtn.vip) - The creator of [Wizzl](https://wizzl.app). An aspiring Go developer.
